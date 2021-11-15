@@ -1,0 +1,112 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome {{request.user}}</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="vision">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/vision_mission.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Vision Mission
+            </h5>
+            This is the vision and mission of the institute
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="depart">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/Department.webp' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Department Mission, Vision and PO,PSO,PEO
+            </h5>
+            These are Department's Goals
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="syllab">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/syllabus.png' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Syllabus Copy
+            </h5>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="rubrics">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/rubrics.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Rubrics 
+            </h5>
+            Rubrics for Laboratory sessions and assignments and projects
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="uni_exam">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/exam_paper.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              University Exam Papers
+            </h5>
+            University exam papers with point wise solutions (Minimum 2)
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <a href="ict">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/ict.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              ICT
+            </h5>
+            Teaching material/handouts/Evidence of ICT
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="qb">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/question_bank.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Question Bank
+            </h5>
+            Question bank on Syllabus
+          </div> 
+        </div>
+      </a>
+    </div>
+ </div>
+
+
+</section>
+{% endblock content %}
